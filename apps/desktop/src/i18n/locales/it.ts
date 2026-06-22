@@ -136,6 +136,8 @@ export default {
     batchDeleteConfirm: "Sei sicuro di voler eliminare {count} elementi selezionati? Questa azione non può essere annullata.",
     batchDeleteSuccess: "{count} elementi eliminati con successo",
     clearSelection: "Cancella selezione",
+    sortByDate: "Ordina per data di modifica",
+    sortByFolder: "Ordina per struttura cartelle",
   },
 
   connection: {

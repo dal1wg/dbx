@@ -139,6 +139,8 @@ export default {
     batchDeleteConfirm: "确定要删除选中的 {count} 项吗？此操作无法撤销。",
     batchDeleteSuccess: "成功删除 {count} 项",
     clearSelection: "清除选择",
+    sortByDate: "按修改日期排序",
+    sortByFolder: "按文件夹结构排序",
   },
 
   connection: {

@@ -136,6 +136,8 @@ export default {
     batchDeleteConfirm: "確定要刪除選取的 {count} 項嗎？此操作無法復原。",
     batchDeleteSuccess: "成功刪除 {count} 項",
     clearSelection: "清除選取",
+    sortByDate: "依修改日期排序",
+    sortByFolder: "依資料夾結構排序",
   },
 
   connection: {

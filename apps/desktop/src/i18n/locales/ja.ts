@@ -138,6 +138,8 @@ export default {
     batchDeleteConfirm: "選択した {count} 項目を削除してもよろしいですか？この操作は元に戻せません。",
     batchDeleteSuccess: "{count} 項目を削除しました",
     clearSelection: "選択を解除",
+    sortByDate: "更新日時で並べ替え",
+    sortByFolder: "フォルダ構造で並べ替え",
   },
   connection: {
     title: "新しい接続",

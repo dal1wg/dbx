@@ -138,6 +138,8 @@ export default {
     batchDeleteConfirm: "Are you sure you want to delete {count} selected items? This action cannot be undone.",
     batchDeleteSuccess: "Successfully deleted {count} items",
     clearSelection: "Clear Selection",
+    sortByDate: "Sort by Date Modified",
+    sortByFolder: "Sort by Folder Structure",
   },
 
   connection: {

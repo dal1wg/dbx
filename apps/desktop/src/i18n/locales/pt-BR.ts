@@ -136,6 +136,8 @@ export default {
     batchDeleteConfirm: "Tem certeza de que deseja excluir {count} itens selecionados? Esta ação não pode ser desfeita.",
     batchDeleteSuccess: "{count} itens excluídos com sucesso",
     clearSelection: "Limpar seleção",
+    sortByDate: "Ordenar por data de modificação",
+    sortByFolder: "Ordenar por estrutura de pastas",
   },
 
   connection: {
