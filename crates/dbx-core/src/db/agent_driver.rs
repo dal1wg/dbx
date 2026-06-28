@@ -1104,9 +1104,7 @@ fn agent_java_args(jar_path: &str) -> Vec<String> {
         args.push("-Djava.net.preferIPv4Stack=true".to_string());
     }
 
-    if !agent_jar_path_matches_key(jar_path, "oracle-10g") {
-        args.push("--add-opens=java.sql/java.sql=ALL-UNNAMED".to_string());
-    }
+    args.push("--add-opens=java.sql/java.sql=ALL-UNNAMED".to_string());
 
     args.extend(["-XX:TieredStopAtLevel=1", "-XX:+UseSerialGC", "-jar", jar_path].into_iter().map(str::to_string));
 
@@ -1284,13 +1282,6 @@ mod tests {
         let args = agent_java_args("/tmp/dbx-agent-dameng.jar");
 
         assert!(args.iter().any(|arg| arg == "--add-opens=java.sql/java.sql=ALL-UNNAMED"));
-    }
-
-    #[test]
-    fn agent_java_args_skip_module_flags_for_oracle_10g_profile() {
-        let args = agent_java_args("/tmp/dbx/drivers/oracle-10g/agent.jar");
-
-        assert!(!args.iter().any(|arg| arg == "--add-opens=java.sql/java.sql=ALL-UNNAMED"));
     }
 
     #[test]
