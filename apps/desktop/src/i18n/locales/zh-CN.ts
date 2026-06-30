@@ -2678,6 +2678,8 @@ export default withEnglishFallback({
     showExecutionTargetPickerDescription: "开启后，无选区执行时可在当前语句和全部 SQL 之间临时选择。",
     wordWrap: "自动换行",
     wordWrapDescription: "长 SQL 在编辑器宽度内自动折行显示",
+    sqlSemanticDiagnosticsEnabled: "SQL 语义诊断",
+    sqlSemanticDiagnosticsEnabledDescription: "开启后，编辑器会提示未知表、字段等语义问题；关闭可减少 SQL 解析和元数据检查的性能开销。",
     confirmDangerousSqlExecution: "执行危险 SQL 前弹出确认",
     confirmDangerousSqlExecutionDescription: "关闭后，ALTER、DROP、DELETE、TRUNCATE 等危险 SQL 将直接执行。",
     autoAliasTables: "自动添加表别名",
